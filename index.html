@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio do Renan</title>
+    <!-- Vincula o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="portfolio-container">
+        <!-- Cabeçalho do Perfil -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE8L2odd6BaCcRbftjFuMA-9Pe4KSBapkcMNozuq6iaw&s" alt="Foto do Renan" class="foto">
+        <h1>Renan</h1>
+        <div class="subtitulo">Estudante de Desenvolvimento</div>
+        <p class="bio">Seja bem-vindo ao meu portfólio! Estou participando de um desafio prático onde aplico conceitos fundamentais de desenvolvimento frontend para criar interfaces modernas, limpas e interativas.</p>
+ 
+        <!-- Seção de Habilidades Técnicas -->
+        <div class="secao-titulo">Minhas Techs</div>
+        <div class="lista-habilidades">
+            <span class="tag-hab">HTML5</span>
+            <span class="tag-hab">CSS3</span>
+            <span class="tag-hab">JavaScript</span>
+            <span class="tag-hab">Git / VS Code</span>
+        </div>
+
+        <!-- Seção de Projetos Práticos -->
+        <div class="secao-titulo">Projetos Recentes</div>
+
+        <a href="https://github.com/Renan0906/calculadora-simples" target="_blank" style="text-decoration: none; display: block;">
+        
+        <div class="projeto-item">
+            <strong>01. Calculadora simples</strong>
+            <p>Utilizei o intellij e o java para fazer essa calculadora de forma simples.</p>
+        </div>
+
+        <div class="projeto-item">
+            <strong>02. Contador Dinâmico em JS</strong>
+            <p>Aplicação manipulando o DOM para registrar interações em tempo real.</p>
+        </div>
+
+        <a href="https://github.com/Renan0906" target="_blank" class="link-github-perfil">
+            🌐 Visitar meu perfil no GitHub
+        </a>
+
+        <!-- Área Interativa -->
+        <button class="btn-curtir" id="botaoCurtir">💜 Curtir portfólio</button>
+        <div class="contador-texto">
+            Este portfólio recebeu <span id="numeroCurtidas" class="numero-destaque">0</span> interações.
+        </div>
+    </div>
+
+    <!-- Vincula o arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
