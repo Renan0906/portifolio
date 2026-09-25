@@ -39,14 +39,15 @@ h1 {
 }
 
 .subtitulo {
-    color: #6f42c1;
+    color: var(--text-color);
+    opacity: 0.8;
     font-size: 16px;
     font-weight: bold;
     margin: 0 0 16px 0;
 }
 
 .bio {
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 14px;
     line-height: 1.6;
     margin: 0 0 24px 0;
@@ -128,6 +129,7 @@ h1 {
     margin-top: 12px;
     font-size: 13px;
     color: #ffffff;
+    margin-bottom: 30px;
 }
 
 .numero-destaque {
@@ -154,4 +156,35 @@ h1 {
 .link-github-perfil:hover {
     background-color: #6f42c1;
     color: #ffffff;
+}
+
+:root {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --accent-color: #8a2be2;
+    --card-bg: #1e1e1e;
+}
+
+.light-theme {
+    --bg-color: #ffffff;
+    --text-color: #121212;
+    --card-bg: #f5f5f5;
+    --accent-color: #6a1b9a;
+}
+
+body, h1, h2, h3 p, span, li {
+ background-color: var(--bg-color);
+ color: var(--text-color);
+ transition: background-color 0.3s  ease, color 0.3s ease;
+}
+
+.card {
+    background-color: var(--card-bg);
+}
+
+/* Se os seus textos ou blocos internos não mudarem de cor, 
+   podemos forçar os containers principais também: */
+
+   {
+    color: #121212 !important;
 }
