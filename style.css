@@ -1,0 +1,216 @@
+/* Estilo Geral e Cores */
+body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Container Principal do Portfólio */
+.portfolio-container {
+    background-color: var(--card-bg);
+    transition: background-color 0.3s ease;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(109, 109, 109, 0.566);
+    padding: 32px;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Foto de Perfil */
+.foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #6f42c1;
+    margin-bottom: 16px;
+}
+
+h1 {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 26px;
+    margin: 0 0 8px 0;
+}
+
+.subtitulo {
+    color: var(--text-color);
+    opacity: 0.8;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 16px 0;
+}
+
+.bio {
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 24px 0;
+}
+
+/* Seções Internas */
+.secao-titulo {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: left;
+    border-bottom: 2px solid #6f42c1;
+    padding-bottom: 6px;
+    margin: 24px 0 12px 0;
+}
+
+/* Tags de Habilidades */
+.lista-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.tag-hab {
+    background-color: #6f42c1;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Lista de Projetos */
+.projeto-item {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-left: 4px solid #6f42c1;
+    padding: 12px;
+    border-radius: 0 8px 8px 0;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.projeto-item strong {
+    color: #6f42c1;
+    font-size: 14px;
+}
+
+.projeto-item p {
+    margin: 4px 0 0 0;
+    color: #6f42c1;
+    font-size: 13px;
+}
+
+/* Botão de Interação */
+.btn-curtir {
+    background-color: #6f42c1;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 20px;
+    transition: background 0.2s, transform 0.1s;
+    width: 100%;
+}
+
+.btn-curtir:hover {
+    background-color: #523096;
+}
+
+.btn-curtir:active {
+    transform: scale(0.98);
+}
+
+.contador-texto {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.numero-destaque {
+    font-weight: bold;
+    color: #6f42c1;
+}
+
+/* Estilo do botão de link para o perfil do GitHub */
+.link-github-perfil {
+    display: inline-block;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #6f42c1;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: all 0.4s ease;
+}
+
+/* Efeito visual de inversão de cores ao passar o mouse */
+.link-github-perfil:hover {
+    background-color: #6f42c1;
+    color: #ffffff;
+}
+
+:root {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --accent-color: #8a2be2;
+    --card-bg: #1e1e1e;
+}
+
+.light-theme {
+    --bg-color: #ffffff;
+    --text-color: #121212;
+    --card-bg: #f5f5f5;
+    --accent-color: #6a1b9a;
+}
+
+body, h1, h2, h3, p, span, li {
+ background-color: var(--bg-color);
+ color: var(--text-color);
+ transition: background-color 0.5s  ease, color 0.5s ease;
+}
+
+/* Força absolutamente todos os textos a ficarem escuros quando o modo claro estiver ativo */
+body.light-theme,
+body.light-theme .portfolio-container,
+body.light-theme .secao-titulo,
+body.light-theme h1
+body.light-theme h2,
+body.light-theme h3,
+body.light-theme p,
+body.light-theme span,
+body.light-theme strong,
+body.light-theme li
+body.light-theme div {
+    color: var(--text-color) !important;
+}
+
+body.light-theme .contador-texto,
+body.light-theme .link-github-perfil,
+body.light-theme a {
+     color: var(--text-color) !important;
+     border-color: var(--text-color) !important;
+}
+
+.card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body.light-theme .tag-hab {
+    color: #ffffff !important
+}
