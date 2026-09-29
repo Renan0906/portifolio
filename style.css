@@ -206,17 +206,32 @@ body, h1, h2, h3, p, span, li {
  transition: background-color 0.5s  ease, color 0.5s ease;
 }
 
+/* Estilo para aumentar o botão de alternar tema */
+#theme-toggle {
+     background-color: #6f42c1;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 7px;
+    width: 7%;
+}
+
+
 /* Força absolutamente todos os textos a ficarem escuros quando o modo claro estiver ativo */
 body.light-theme,
 body.light-theme .portfolio-container,
 body.light-theme .secao-titulo,
-body.light-theme h1
+body.light-theme h1,
 body.light-theme h2,
 body.light-theme h3,
 body.light-theme p,
 body.light-theme span,
 body.light-theme strong,
-body.light-theme li
+body.light-theme li,
 body.light-theme div {
     color: var(--text-color) !important;
 }
