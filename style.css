@@ -13,7 +13,8 @@ body {
 
 /* Container Principal do Portfólio */
 .portfolio-container {
-    background-color: #000000;
+    background-color: var(--card-bg);
+    transition: background-color 0.3s ease;
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(109, 109, 109, 0.566);
     padding: 32px;
@@ -33,7 +34,9 @@ body {
 }
 
 h1 {
-    color: #ffffff;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
     font-size: 26px;
     margin: 0 0 8px 0;
 }
@@ -83,7 +86,9 @@ h1 {
 
 /* Lista de Projetos */
 .projeto-item {
-    background-color: #fafafa;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
     border-left: 4px solid #6f42c1;
     padding: 12px;
     border-radius: 0 8px 8px 0;
@@ -149,11 +154,34 @@ h1 {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 20px;
-    transition: all 0.2s ease;
+
+    transition: all 0.4s ease;
+
 }
 
 /* Efeito visual de inversão de cores ao passar o mouse */
 .link-github-perfil:hover {
+    background-color: #6f42c1;
+    color: #ffffff;
+}
+
+.link-linkedin-perfil {
+    display: inline-block;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #6f42c1;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+    transition: all 0.4s ease;
+
+}
+
+.link-linkedin-perfil:hover {
     background-color: #6f42c1;
     color: #ffffff;
 }
@@ -172,19 +200,40 @@ h1 {
     --accent-color: #6a1b9a;
 }
 
-body, h1, h2, h3 p, span, li {
+body, h1, h2, h3, p, span, li {
  background-color: var(--bg-color);
  color: var(--text-color);
- transition: background-color 0.3s  ease, color 0.3s ease;
+ transition: background-color 0.5s  ease, color 0.5s ease;
+}
+
+/* Força absolutamente todos os textos a ficarem escuros quando o modo claro estiver ativo */
+body.light-theme,
+body.light-theme .portfolio-container,
+body.light-theme .secao-titulo,
+body.light-theme h1
+body.light-theme h2,
+body.light-theme h3,
+body.light-theme p,
+body.light-theme span,
+body.light-theme strong,
+body.light-theme li
+body.light-theme div {
+    color: var(--text-color) !important;
+}
+
+body.light-theme .contador-texto,
+body.light-theme .link-github-perfil,
+body.light-theme a {
+     color: var(--text-color) !important;
+     border-color: var(--text-color) !important;
 }
 
 .card {
     background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Se os seus textos ou blocos internos não mudarem de cor, 
-   podemos forçar os containers principais também: */
-
-   {
-    color: #121212 !important;
+body.light-theme .tag-hab {
+    color: #ffffff !important
 }

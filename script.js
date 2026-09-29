@@ -21,7 +21,7 @@ const savedTheme = localStorage.getItem('theme');
 // Se tiver uma preferência salva, aplica ela imediatamente ao carregar
 if (savedTheme === 'light') {
     bodyElement.classList.add('light-theme');
-    themeToggleBtn.textContent = '☀️ Modo Claro';
+    themeToggleBtn.textContent = '☀️';
 }
 
 // Adiciona o evento de clique no botão
@@ -32,9 +32,9 @@ themeToggleBtn.addEventListener('click', () => {
     // Verifica qual tema está ativo agora e salva no localStorage
     if (bodyElement.classList.contains('light-theme')) {
         localStorage.setItem('theme', 'light');
-        themeToggleBtn.textContent = '☀️ Modo Claro';
+        themeToggleBtn.textContent = '☀️';
     } else {
         localStorage.setItem('theme', 'dark');
-        themeToggleBtn.textContent = '🌙 Modo Escuro';
+        themeToggleBtn.textContent = '🌙';
     }
 });
